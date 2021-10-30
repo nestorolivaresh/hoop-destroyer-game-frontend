@@ -12,7 +12,7 @@ function transformPlayerData(playerData, isBoss) {
 
   return {
     name: playerData.name,
-    imageURI: playerData.imageURI,
+    imageURI: `https://cloudflare-ipfs.com/ipfs/${playerData.imageURI}`,
     sp: playerData.sp.toNumber(),
     maxSp: playerData.maxSp.toNumber(),
     shotAccuracy: playerData.shotAccuracy.toNumber(),

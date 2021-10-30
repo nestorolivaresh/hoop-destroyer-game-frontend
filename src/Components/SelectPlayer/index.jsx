@@ -47,10 +47,7 @@ function SelectPlayer({ setPlayerNFT }) {
         <div className="name-container">
           <p>{player.name}</p>
         </div>
-        <img
-          src={`https://cloudflare-ipfs.com/ipfs/${player.imageURI}`}
-          alt={player.name}
-        />
+        <img src={`${player.imageURI}`} alt={player.name} />
         <button
           type="button"
           className="character-mint-button"

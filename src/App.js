@@ -94,6 +94,13 @@ function App() {
 
   async function fetchNFTMetadata() {
     console.log("Checking for Character NFT on address:", currentAccount);
+    const { ethereum } = window;
+    if (ethereum.chainId !== "0x4") {
+      alert(
+        "Please change your account network to Rinkeby and reload the page to play!"
+      );
+      return;
+    }
     const provider = new ethers.providers.Web3Provider(window.ethereum);
     const signer = provider.getSigner();
     const gameContract = new ethers.Contract(
@@ -151,6 +158,7 @@ function App() {
               className="footer-text"
               href="https://twitter.com/neoh_dev"
               target="_blank"
+              rel="noreferrer"
             >{`by @neoh_dev`}</a>
           </div>
         </div>
