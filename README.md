@@ -1,4 +1,4 @@
-# Hoop Destroyer
+# Hoop Destroyer NFT Game
 
 This is the frontend of the Hoop Destroyer NFT Game. Applying React, CSS (classes) on styling and ethers to handle contract interaction and to retrieve NFT info.
 
